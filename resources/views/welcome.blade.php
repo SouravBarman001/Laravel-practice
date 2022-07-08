@@ -8,6 +8,6 @@
 </head>
 <body>
 <h1>this is welcome page</h1>
-
+<a href="{{url('/')}}"> hello</a>
 </body>
 </html>

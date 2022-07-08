@@ -9,6 +9,6 @@
 <body>
     
     <h1>this is hello page</h1>
-    <a href="welcome"> welcome</a>
+    <a href="{{url('/welcome')}}"> welcome</a>
 </body>
 </html>
