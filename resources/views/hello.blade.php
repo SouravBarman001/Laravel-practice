@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +9,9 @@
     <title>Document</title>
 </head>
 <body>
-    
+      <x-header/>
+
+
     <h1>this is hello page</h1>
     <a href="{{url('/welcome')}}"> welcome</a>
 </body>
