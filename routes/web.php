@@ -20,6 +20,6 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
-Route::view('header', 'components.header');
+// Route::view('header', 'components.header');
 // Route::get("user",[UserController::class,'show']);
-Route::get("/user/{id}",[UserController::class,'show']);
+Route::get("/users/{v}",[UserController::class,'loadView']);

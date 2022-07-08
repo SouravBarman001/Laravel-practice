@@ -1,0 +1,1 @@
+<h1>{{$name}} this is view</h1>
