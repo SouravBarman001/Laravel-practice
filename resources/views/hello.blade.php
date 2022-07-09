@@ -11,8 +11,13 @@
 <body>
       <x-header/>
 
-
-    <h1>this is hello page</h1>
-    <a href="{{url('/welcome')}}"> welcome</a>
+   <h1>This is hello page</h1>
+   <ul>
+    <li><a href="{{URL::to('/home')}}">home</a>
+    </li>
+    <li><a href="{{URL::to('/about')}}">about</a>
+    </li>
+   </ul>
+     
 </body>
 </html>
