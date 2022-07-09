@@ -8,5 +8,7 @@
 </head>
 <body>
     <h1>About page</h1>
+   <h2> <?php echo "hi";
+    ?></h2>
 </body>
 </html>

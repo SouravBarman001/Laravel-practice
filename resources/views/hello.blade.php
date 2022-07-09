@@ -18,6 +18,6 @@
     <li><a href="{{URL::to('/about')}}">about</a>
     </li>
    </ul>
-     
+   <p>Visited url {{URL::to('save_data')}}</p>
 </body>
 </html>
