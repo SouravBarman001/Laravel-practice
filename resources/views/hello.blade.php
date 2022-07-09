@@ -10,8 +10,8 @@
 </head>
 <body>
       <x-header/>
-
-   <h1>This is hello page</h1>
+      <h1>full url {{URL::full()}}</h1>
+   <h1>Visited url {{URL::previous()}}</h1>
    <ul>
     <li><a href="{{URL::to('/home')}}">home</a>
     </li>
