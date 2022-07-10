@@ -6,19 +6,25 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    function loadView($user){
+    // function loadView($user){
 
        
-            try {
+    //         try {
         
-                return view('users1',['name'=>$user]);  //view name is testing but i have given testing1
+    //             return view('users1',['name'=>$user]);  //view name is testing but i have given testing1
         
-              } catch (\Exception $e) {  //here we catch that exception file not found and handle it
+    //           } catch (\Exception $e) {  //here we catch that exception file not found and handle it
         
-                  return "Page not found";
+    //               return "Page not found";
         
           
 
-      //  return view('users',['name'=>$user]);
-    }}
+    //   //  return view('users',['name'=>$user]);
+    // }}
+
+
+    function loadView(){
+      $data = ["sourav","razu","mitu"];
+      return view('users',["names"=>$data]);
+    }
 }

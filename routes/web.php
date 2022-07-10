@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\LoginExample;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,4 +30,7 @@ Route::Get('/home', function(){
 
 // Route::view('header', 'components.header');
 // Route::get("user",[UserController::class,'show']);
-Route::get("/users/{v}",[UserController::class,'loadView']);
+// Route::get("/users",[UserController::class,'loadView']);
+Route::post("/loginExample",[LoginExample::class,'getData']);
+
+Route::view("login","loginExample");

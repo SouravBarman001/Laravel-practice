@@ -1,0 +1,1 @@
+<h1>This is inner page of php</h1>
