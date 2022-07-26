@@ -13,4 +13,4 @@
 
     var names = @json($names);
     console.log(names);
-</script>
+</script> 

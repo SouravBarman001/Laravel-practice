@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\LoginExample;
+use App\Http\Controllers\databaseController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,19 +15,19 @@ use App\Http\Controllers\LoginExample;
 |
 */
 
-Route::get('/', function () {
-    return view('hello');
-});
-Route::get('/welcome', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('hello');
+// });
+// Route::get('/welcome', function () {
+//     return view('welcome');
+// });
 
-Route::Get('/about', function(){
-    return view('about');
-});
-Route::Get('/home', function(){
-    return view('home');
-});
+// Route::Get('/about', function(){
+//     return view('about');
+// });
+// Route::Get('/home', function(){
+//     return view('home');
+// });
 
 // Route::view('header', 'components.header');
 // Route::get("user",[UserController::class,'show']);
@@ -34,3 +35,9 @@ Route::Get('/home', function(){
 Route::post("/loginExample",[LoginExample::class,'getData']);
 
 Route::view("login","loginExample");
+
+Route::view("access","access");
+Route::view("nonaccess","nonaccess");
+
+Route::get("datatest",[databaseController::class,'index']);
+
