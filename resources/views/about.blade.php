@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <x-header componentName="about"/>
     <h1>About page</h1>
    <h2> <?php echo "hi";
     ?></h2>

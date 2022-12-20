@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\HTTP;
 class UserController extends Controller
 {
     // function loadView($user){
@@ -23,8 +23,15 @@ class UserController extends Controller
     // }}
 
 
-    function loadView(){
-      $data = ["sourav","razu","mitu"];
-      return view('users',["names"=>$data]);
-    }
+    // function loadView(){
+    //   $data = ["sourav","razu","mitu"];
+    //   return view('users',["names"=>$data]);
+    // }
+
+function index(){
+$data = HTTP::get("http://reqres.in/api/users?page=1");
+return view('users',['collection'=>$data['data']]);
+}
+
+
 }

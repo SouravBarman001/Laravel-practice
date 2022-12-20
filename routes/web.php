@@ -1,4 +1,5 @@
 <?php
+use App\Http\Controllers\FormController;
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
@@ -25,19 +26,29 @@ use App\Http\Controllers\databaseController;
 // Route::Get('/about', function(){
 //     return view('about');
 // });
-// Route::Get('/home', function(){
-//     return view('home');
+
+
+
+
+// Route::Get('/hello', function(){
+//     return view('hello');
 // });
+
+// Route::view("hi","hello");
+
+
 
 // Route::view('header', 'components.header');
 // Route::get("user",[UserController::class,'show']);
-// Route::get("/users",[UserController::class,'loadView']);
-Route::post("/loginExample",[LoginExample::class,'getData']);
+//  Route::get("/users",[UserController::class,'index']);
 
-Route::view("login","loginExample");
+// Route::post("/loginExample",[LoginExample::class,'getData']);
 
-Route::view("access","access");
-Route::view("nonaccess","nonaccess");
+// Route::view("login","loginExample");
 
-Route::get("datatest",[databaseController::class,'index']);
+// Route::view("access","access");
+// Route::view("nonaccess","nonaccess");
 
+// Route::get("datatest",[databaseController::class,'index']);
+Route::post("submit",[FormController::class,"testRequest"]);
+Route::view("login","form"); 

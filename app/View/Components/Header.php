@@ -13,11 +13,11 @@ class Header extends Component
      * @return void
      */
 
-    //public $title;
-    public function __construct()
+    public $title;
+    public function __construct($componentName)
     {
-       // $this->title = $name;
-       // $this->title =$componentName;
+     //  $this->title = $name;
+     $this->title =$componentName;
     }
 
     /**

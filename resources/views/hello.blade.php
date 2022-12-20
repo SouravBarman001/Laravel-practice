@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-      <x-header/>
+      <x-header componentName="user"/>
       <h1>full url {{URL::full()}}</h1>
    <h1>Visited url {{URL::previous()}}</h1>
    <ul>
